@@ -1,7 +1,7 @@
 # telemetria-espacial-preflight
 Sistema de verificação de telemetria pré-decolagem
 
-Sobre o projeto:
+## Sobre o projeto:
 
 Esse projeto simula o sistema de verificação pré-decolagem (pre-flight check) de uma nave, verificando dados cruciais para uma decolagem segura, como temperatura externa e interna, garantindo a segurança da tripulação e da nave antes da decolagem, emitindo o status de autorização "PRONTO PARA DECOLAR" ou o status de cancelamento da viagem "DECOLAGEM ABORTADA".
 
@@ -14,7 +14,7 @@ Muitas das variáveis utilizaram a função random, sendo variáveis com valores
 Todos os processos são realizados por meio de if, elif e else, checando se o valores batem com os parâmetros pré-definidos ou não. Caso os valores estejam de acordo com os parâmetros, é adicionado uma string em forma de concatenação a uma variável string com o operador relacional +=, chamada “relatorio”.
 Caso os valores não estejam de acordo com os parâmetros, é adicionada outra string em forma de concatenação a variável “relatorio” e é adicionado o valor “True” a variável “testfalhou”, onde inicialmente essa variável contém o valor False, indicando que nenhum teste falhou nos processos.
 
-Parâmetros de telemetria:
+## Parâmetros de telemetria:
 - Temperatura interna: 18C° a 25C°
 - Temperatura externa: 20C° a 30C°
 - Integridade estrutural: (0/ 1)
@@ -22,30 +22,32 @@ Parâmetros de telemetria:
 - Pressão dos tanques: 150 a 200 bar
 - Status dos módulos: Todos operacionais (True)
 
-Cálculos utilizados:
+## Cálculos utilizados:
 - rendimento = (energia utilizada / energia total utilizada) * 100
 - energía disponivel = capacidade total * (carga atual / 100)
 - energia útil = energia disponível * (rendimento / 100)
 - autonomia restante = energia útil - consumo estimado para decolagem
 
-Tecnologias utilizadas:
+## Tecnologias utilizadas:
 - Linguagem: Python
 - Ambiente: Jupyter Notebook
 - Bibliotecas: random (simulação de dados)
 
-Prints da Execução:
+## Prints da Execução:
 <img width="1447" height="467" alt="image" src="https://github.com/user-attachments/assets/28bdc14b-287d-4bb3-b737-1ccecd60841c" />
 <img width="1436" height="432" alt="image" src="https://github.com/user-attachments/assets/c4b97afa-41cb-4c09-8558-1b167b8c7a35" />
 <img width="1447" height="433" alt="image" src="https://github.com/user-attachments/assets/d2a839b5-6d20-4ed1-bbfe-37841bba7c85" />
 
 
-Como executar:
+## Como executar:
 Via Google Colab:
 - Faça o upload do arquivo telemetria_espacial_preflight.ipynb.
 - Execute o notebook pressionando Ctrl + F9 (ou Cmd + F9 no Mac).
 
 Via VS Code ou Jupyter Lab/Notebook:
 - Certifique-se de ter o Python 3.14.7 e a extensão de Jupyter Notebooks instalados.
-- Abra o arquivo telemetria_espacial_preflight.ipynb.
-- Clique em Run All (ou rode célula por célula).
+- Clone o repositório:
+```bash
+git clone [https://github.com/devpalavicini/telemetria-espacial-preflight.git](https://github.com/devpalavicini/telemetria-espacial-preflight.git)
+
 
