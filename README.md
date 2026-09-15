@@ -40,7 +40,6 @@ Prints da Execução:
 
 
 Como executar:
-Pré requisitos: Python 3. instalado (não é necessário nenhuma biblioteca instalada)
 Via Google Colab:
 - Faça o upload do arquivo telemetria_espacial_preflight.ipynb.
 - Execute o notebook pressionando Ctrl + F9 (ou Cmd + F9 no Mac).
