@@ -49,6 +49,6 @@ Via VS Code ou Jupyter Lab/Notebook:
 - Clone o repositório:
 ```bash
 git clone https://github.com/devpalavicini/telemetria-espacial-preflight.git
-    cd telemetria-espacial-preflight
+cd telemetria-espacial-preflight
 
 - Abra telemetria_espacial_preflight.ipynb no Jupyter ou no VS Code com suporte a notebooks, selecione um kernel Python e execute todas as células.
