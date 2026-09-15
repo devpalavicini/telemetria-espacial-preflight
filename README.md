@@ -1,6 +1,4 @@
 # telemetria-espacial-preflight
-Simulador em Python da checagem final pré-decolagem de um veículo espacial. O sistema analisa dados em tempo real (temperaturas, pressão, integridade e energia), calcula a autonomia da missão e decide se o lançamento é seguro (PRONTO PARA DECOLAR) ou se deve ser interrompido (DECOLAGEM ABORTADA).
-
 Sistema de verificação de telemetria pré-decolagem
 
 Sobre o projeto:
@@ -24,7 +22,25 @@ Parâmetros de telemetria:
 - Pressão dos tanques: 150 a 200 bar
 - Status dos módulos: Todos operacionais (True)
 
+Cálculos utilizados:
+- rendimento = (energia utilizada / energia total utilizada) * 100
+- energía disponivel = capacidade total * (carga atual / 100)
+- energia útil = energia disponível * (rendimento / 100)
+- autonomia restante = energia útil - consumo estimado para decolagem
+
 Tecnologias utilizadas:
 - Linguagem: Python
 - Ambiente: Jupyter Notebook
 - Bibliotecas: random (simulação de dados)
+
+Prints da Execução:
+<img width="1447" height="467" alt="image" src="https://github.com/user-attachments/assets/28bdc14b-287d-4bb3-b737-1ccecd60841c" />
+<img width="1436" height="432" alt="image" src="https://github.com/user-attachments/assets/c4b97afa-41cb-4c09-8558-1b167b8c7a35" />
+<img width="1447" height="433" alt="image" src="https://github.com/user-attachments/assets/d2a839b5-6d20-4ed1-bbfe-37841bba7c85" />
+
+
+Como executar:
+Pré requisitos: Python 3. instalado (não é necessário nenhuma biblioteca instalada)
+Execução: Execute o arquivo no seu terminal
+bash telemetria_espacial_preflight.py
+
